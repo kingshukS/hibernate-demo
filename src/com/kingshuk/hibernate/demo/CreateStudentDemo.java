@@ -18,11 +18,13 @@ public class CreateStudentDemo {
 		
 		try {
 			System.out.println("begining transaction...");
-			Student student1 = new Student("Ramit", "Kovvalpurail", "ramit.k@gmail.com");
+			Student student1 = new Student("Prashun", "Dey", "prasun.dey@gmail.com");
 //			Student student2 = new Student("Ankur", "Bhartiya", "bhartiay.05@gmail.com");
 //			Student student3 = new Student("Nehal", "Gupta", "nehalgupta2277@gmail.com");
 			session.beginTransaction();
+			System.out.println(student1.getId());
 			session.save(student1);
+			System.out.println(student1.getId());
 //			session.save(student2);
 //			session.save(student3);
 			session.getTransaction().commit();

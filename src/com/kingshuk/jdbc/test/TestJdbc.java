@@ -1,4 +1,4 @@
-package com.kingshuk.jdbc;
+package com.kingshuk.jdbc.test;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ public class TestJdbc {
 		
 		String jdbcUrl = "jdbc:mysql://localhost:3306/hb_student_tracker?useSSL=false"; 
 		String user = "root";
-		String password = "Puchki@0810";
+		String password = "";
 		try {
 			System.out.println("Connecting to database:"+jdbcUrl);
 			Connection conn = DriverManager.getConnection(jdbcUrl, user, password);
